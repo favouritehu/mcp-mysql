@@ -1,0 +1,15 @@
+services:
+  mcp-server:
+    build: .
+    ports:
+      - "3004:3004"
+    environment:
+      # Remote MySQL on Hostinger
+      - MYSQL_HOST=srv1951.hstgr.io
+      - MYSQL_PORT=3306
+      - MYSQL_USER=u877337720_fab
+      - MYSQL_PASSWORD=Agra@95288
+      - MYSQL_DATABASE=u877337720_tallydb2
+      - MYSQL_CHARSET=utf8mb4
+      - MYSQL_COLLATION=utf8mb4_unicode_ci
+    restart: unless-stopped
