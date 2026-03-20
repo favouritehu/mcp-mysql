@@ -17,8 +17,9 @@ logger = logging.getLogger("mysql_mcp_server")
 
 def get_db_config():
     """Get database configuration from environment variables."""
-    # Load environment variables from .env file if it exists
-    load_dotenv()
+    # Load environment variables from .env file in the project root
+    env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), '.env')
+    load_dotenv(env_path)
     
     config = {
         "host": os.getenv("MYSQL_HOST", "mysql"),
