@@ -21,7 +21,7 @@ def get_db_config():
     load_dotenv()
     
     config = {
-        "host": os.getenv("MYSQL_HOST", "localhost"),
+        "host": os.getenv("MYSQL_HOST", "mysql"),
         "port": int(os.getenv("MYSQL_PORT", "3306")),
         "user": os.getenv("MYSQL_USER"),
         "password": os.getenv("MYSQL_PASSWORD"),

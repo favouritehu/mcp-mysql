@@ -29,7 +29,7 @@ npx -y @smithery/cli install mysql-mcp-server --client claude
 ## Configuration
 Set the following environment variables:
 ```bash
-MYSQL_HOST=localhost     # Database host
+MYSQL_HOST=mysql         # Database host
 MYSQL_PORT=3306         # Optional: Database port (defaults to 3306 if not specified)
 MYSQL_USER=your_username
 MYSQL_PASSWORD=your_password
@@ -51,7 +51,7 @@ Add this to your `claude_desktop_config.json`:
         "mysql_mcp_server"
       ],
       "env": {
-        "MYSQL_HOST": "localhost",
+        "MYSQL_HOST": "mysql",
         "MYSQL_PORT": "3306",
         "MYSQL_USER": "your_username",
         "MYSQL_PASSWORD": "your_password",
@@ -76,7 +76,7 @@ Add this to your `mcp.json`:
                 "mysql_mcp_server"
             ],
       "env": {
-        "MYSQL_HOST": "localhost",
+        "MYSQL_HOST": "mysql",
         "MYSQL_PORT": "3306",
         "MYSQL_USER": "your_username",
         "MYSQL_PASSWORD": "your_password",

@@ -12,8 +12,8 @@ startCommand:
     properties:
       mysqlHost:
         type: string
-        description: "The hostname of the MySQL server. Use localhost for local connections or a specific address for remote databases. For Docker, use host.docker.internal to access the host machine, or the service name (e.g., 'mysql') if both are in a Docker network."
-        default: "localhost"
+        description: "The hostname of the MySQL server. Use mysql for standard Docker networking connections or a specific address for remote databases."
+        default: "mysql"
       mysqlPort:
         type: number
         description: "The port of the MySQL server (default: 3306)."
